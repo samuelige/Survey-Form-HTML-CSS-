@@ -1,0 +1,67 @@
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+*{
+    text-decoration: none;
+}
+.text-primary{
+    color: #3693ff;
+    
+}
+
+a{
+    color: #fff;
+}
+
+body{
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.move{
+    margin-left: 50px;
+}
+.submit{
+    background-color: white;
+    color: #3693ff;
+}
+.container{
+    margin: 20%;
+    background-color: wheat;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#table{
+    margin: 20%;
+    background-color: white;
+    margin-top: -160px; 
+    padding: 5px;
+}
+sup{
+    color: red;
+}
+  
+input.valid{
+    border-color: #36cc36;
+}
+input.invalid{
+    border-color: red;
+}
+input + p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    color: red;
+    opacity: 0;
+    height: 0;
+}
+input.invalid + p{
+    opacity: 1;
+    height: 0;
+    margin-bottom:20px;
+}

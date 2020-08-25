@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form || Welcome...</title>
+</head>
+<body>
+    <div class="container"> 
+        <form id="form" class="form">
+            <h2><a href="#"><span class="text-primary">Survey</span> Form</a></h2>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="name">Username <sup>*</sup> </label>
+                    <input type="text" id="name" placeholder="Enter username" />
+                    <small>Error message</small>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="email">Email <sup>*</sup></label>
+                    <input type="text" id="email" placeholder="Enter email" />
+                    <small>Error message</small>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="age">Age <sup>*</sup></label>
+                    <input type="text" id="age" placeholder="Enter age" />
+                    <small>Error message</small>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="course">Course <sup>*</sup></label>
+                    <select class="custom-select" id="course" > 
+                        <option selected disabled value="">Select >>></option> 
+                        <option>Peace Building</option>
+                        <option>Human Security</option>
+                        <option>Conflict Analysis And Sensitivity Studies</option>
+                    </select > 
+                    <small>Error message</small>
+                </div>
+                <!-- <div class="col-md- mb-3" id="move">
+                    >
+                </div> -->
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="gender" id="gender"> Gender:<sup>*</sup>  
+                        <input  name="group1" type="radio"class="move" value="male" checked />
+                        <span> Male</span>
+                        <input name="group1" type="radio" class="move" value="female" />
+                        <span> Female</span>
+                    </label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="gender" id="gender">Description <sup>*</sup></label>
+                    <textarea name="description" id="description" cols="90" rows="10" placeholder="Description" ></textarea>
+                </div>
+            </div>
+            <button type="submit" id="submit" class="submit">Submit</button>
+        </form>
+    </div>
+    <section id="table">
+        <table class="table">
+            <thead>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Age</th>
+                <th scope="col">Course</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Description</th>
+                
+            </thead>
+            <tbody id="survey-list"></tbody>
+        </table>
+
+    </section>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
